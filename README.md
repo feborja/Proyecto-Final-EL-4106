@@ -8,7 +8,7 @@ Tutor  : Giovanni Castiglioni
 
 
 
-Este repositorio esta hecho para eventualmente realizar una tranferencia de estilos basada en python.
-Por el momento, el siguiente repositorio se encuentra un archivo .ipynb que contiene el modelo de Decoder basado en VGG-16 y su codigo respectivo para ser entrenado; el mismo se encuentra comentado y contiene instrucciones dependiendo si lo que se desea hacer es entrenar o sólamente cargar los parámetros para observar resultados.
-El principal requisito es tener descargada la base de datos de COCO "train" del 2017, y modificar la direccion dentro del código de ser necesario. (tambien se puede desde Google Colab y editando la dirección).
-Si se desean cargar los parámetros sobre el modelo, estos se encuentran en el archivo "Deco1FULL.pt", el cual está hecho en base al mejor entrenamiento realizado sobre la red hasta el momento. 
+Este repositorio contiene el proyecto de transferencia de estilos en base a la red VGG-16, inspirado en el trabajo hecho en el paper "Universal Style Transfer via Feature Transforms", la que trabaja con VGG-19. 
+Este proyecto contiene un .ipynb comentado que realiza reconstrucciones, transferencias de estilo  de una y múltiples capas tanto con VGG-16 y 19, donde los parámetros de la VGG-16 fueron entrenados por nosotros, mientras que los de la otra red fueron importados desde el GitHub de los autores de la red. En el .ipynb se encuentra además una comparativa de las recontrucciones de imágenes de ambos modelos en base a una función de pérdidas. Todo lo requerido para ejecutar el código se encuentra dentro de este repositorio, pero si se desea probar resultados con otras imágenes es cosa de agregarlas a la carpeta que corresponda.
+
+Se encuentra además adjunto el código utilizado para entrenar las capas de la red VGG-16, el cueal está diseñado para ser ejecutado en Google Colab y tiene como requisito previo poseer las bases de dato de COCO test2017 y val2017.
